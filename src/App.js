@@ -23,10 +23,16 @@ function App() {
     { index: 3, url: image4 }
   ];
 
+  const footerLinks = [
+    { index: 0, name: 'Privacy Policy', url: 'https://example.com/privacy' },
+    { index: 1, name: 'Terms of Service', url: 'https://example.com/terms' },
+    { index: 2, name: 'Support', url: 'https://example.com/support' },
+  ];
+
 
   return (
     <>
-      <Header navLinks={navLinks} title="True Lie Golf"/>
+      <Header navLinks={navLinks} title="True Lie Golf" />
       <main>
         <Banner
           title="Welcome to True Lie Golf"
@@ -47,6 +53,7 @@ function App() {
           images={products}
         />
       </main>
+      <Footer copyright="2024 Samuel Reutcky" links={footerLinks} />
     </>
   );
 }
